@@ -8,7 +8,7 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <header className="header">
-          <NavLink to="dogs">Home</NavLink>
+          <NavLink to="/dogs">Home</NavLink>
         </header>
       </div>
 

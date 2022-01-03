@@ -1,0 +1,12 @@
+.dog-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid black;
+  width: 50vw;
+  padding: 3vh;
+}
+
+.detail-image {
+  width: 40vw;
+}
