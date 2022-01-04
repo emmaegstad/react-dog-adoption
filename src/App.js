@@ -8,14 +8,23 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <header className="header">
-          <NavLink to="/dogs">Home</NavLink>
+          <h1 className="title">Nibblenoser Pup Adoption</h1>
+          <NavLink className="home-link" to="/dogs">
+            Back to Home
+          </NavLink>
         </header>
       </div>
 
       <Switch>
-        <Route exact path="/" component={Dogs} />
-        <Route exact path="/dogs" component={Dogs} />
-        <Route exact path="/dogs/:id" component={Dog} />
+        <Route exact path="/">
+          <Dogs />
+        </Route>
+        <Route exact path="/dogs">
+          <Dogs />
+        </Route>
+        <Route exact path="/dogs/:id">
+          <Dog />
+        </Route>
       </Switch>
     </BrowserRouter>
   );
