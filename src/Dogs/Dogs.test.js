@@ -9,6 +9,7 @@ test('renders the DogList component', () => {
         dog={{
           id: 3,
           name: 'Althea',
+          breed: 'German Short-haired Pointer',
           image: 'https://placedog.net/500?id=10',
         }}
       />

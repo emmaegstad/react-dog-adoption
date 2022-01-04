@@ -9,6 +9,8 @@ test('renders the DogDetail component', () => {
         dog={[
           {
             name: 'Althea',
+            age: 1,
+            breed: 'German Short-haired Pointer',
             image: 'https://placedog.net/500?id=10',
             bio: 'High energy pooch! Would do well in an active family with another dog to keep her company.',
           },

@@ -6,35 +6,63 @@ Object {
   "baseElement": <body>
     <div>
       <div>
-        <a
-          href="/dogs/undefined"
+        <div
+          class="dog-card"
         >
-          <div
-            class="dog-card"
+          <span
+            class="dog-name"
+          />
+          <span
+            class="dog-breed"
+          >
+            Breed: 
+          </span>
+          <a
+            class="links"
+            href="/dogs/undefined"
           >
             <img
               alt="dog"
               class="dog-image"
             />
-          </div>
-        </a>
+            <span
+              class="more-info"
+            >
+              Find Out More!
+            </span>
+          </a>
+        </div>
       </div>
     </div>
   </body>,
   "container": <div>
     <div>
-      <a
-        href="/dogs/undefined"
+      <div
+        class="dog-card"
       >
-        <div
-          class="dog-card"
+        <span
+          class="dog-name"
+        />
+        <span
+          class="dog-breed"
+        >
+          Breed: 
+        </span>
+        <a
+          class="links"
+          href="/dogs/undefined"
         >
           <img
             alt="dog"
             class="dog-image"
           />
-        </div>
-      </a>
+          <span
+            class="more-info"
+          >
+            Find Out More!
+          </span>
+        </a>
+      </div>
     </div>
   </div>,
   "debug": [Function],
