@@ -1,4 +1,4 @@
-import { render } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import DogDetail from '../DogDetail/DogDetail';
 import { MemoryRouter } from 'react-router-dom';
 
@@ -18,5 +18,7 @@ test('renders the DogDetail component', () => {
       />
     </MemoryRouter>
   );
+
+  await screen.findByText('Althea');
   expect(container).toMatchSnapshot();
 });
