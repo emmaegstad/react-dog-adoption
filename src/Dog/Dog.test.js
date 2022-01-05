@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import DogDetail from '../DogDetail/DogDetail';
 import { MemoryRouter } from 'react-router-dom';
 
