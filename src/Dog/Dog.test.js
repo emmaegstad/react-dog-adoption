@@ -19,6 +19,5 @@ test('renders the DogDetail component', () => {
     </MemoryRouter>
   );
 
-  await screen.findByText('Althea');
   expect(container).toMatchSnapshot();
 });
