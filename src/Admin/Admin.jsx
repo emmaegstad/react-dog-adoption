@@ -4,7 +4,7 @@ import Form from '../Form/Form';
 
 export default function Admin() {
   return (
-    <div>
+    <div className="Admin">
       <Form />
     </div>
   );

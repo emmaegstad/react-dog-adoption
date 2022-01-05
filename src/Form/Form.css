@@ -1,0 +1,20 @@
+.Form {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  gap: 1vh;
+  font-family: monospace;
+  background-color: #006d77;
+  color: aliceblue;
+  padding: 1vh 3vh 4vh 3vh;
+  border-radius: 5px;
+}
+
+.form-title {
+  text-align: center;
+}
+
+.form-button {
+  width: 6vw;
+  align-self: center;
+}

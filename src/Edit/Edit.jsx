@@ -4,7 +4,7 @@ import Form from '../Form/Form';
 
 export default function Edit() {
   return (
-    <div>
+    <div className="Edit">
       <Form />
     </div>
   );
