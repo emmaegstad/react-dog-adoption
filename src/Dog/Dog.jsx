@@ -5,7 +5,7 @@ import { fetchDogById } from '../services/dogs';
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 
-export default function Dog(props) {
+export default function Dog() {
   const [loading, setLoading] = useState(true);
   const [dog, setDog] = useState();
   //   const id = props.match.params.id;
