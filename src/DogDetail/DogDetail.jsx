@@ -1,5 +1,6 @@
 import React from 'react';
 import './DogDetail.css';
+import { Link } from 'react-router-dom';
 
 export default function DogDetail(props) {
   const dog = props.dog;
@@ -12,6 +13,8 @@ export default function DogDetail(props) {
       </p>
       <img className="detail-image" src={dog[0].image} alt="dog" />
       <p className="detail-bio">{dog[0].bio}</p>
+      <Link to="/dogs/:id/edit">Edit</Link>
+      <Link to="/">Delete</Link>
     </div>
   );
 }

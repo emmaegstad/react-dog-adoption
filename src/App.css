@@ -12,6 +12,9 @@ body {
 }
 
 .header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   background-color: #006d77;
   color: #edf6f9;
@@ -25,8 +28,11 @@ body {
   margin: 1.5vh;
 }
 
-.home-link {
+.nav-links {
+  width: 25%;
+  display: flex;
+  justify-content: space-around;
   color: #edf6f9;
-  font-size: 1.2vh;
+  font-size: 1.8vh;
   font-family: monospace;
 }
