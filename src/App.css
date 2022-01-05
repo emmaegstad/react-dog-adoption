@@ -1,38 +1,32 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Shizuru&display=swap');
+
+body {
+  background-color: #edf6f9;
+}
+
+.loader {
+  font-family: 'Shizuru', cursive;
   text-align: center;
+  font-size: 2vh;
+  color: #006d77;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  text-align: center;
+  background-color: #006d77;
+  color: #edf6f9;
+  padding: 2vh;
+  margin-bottom: 4vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.title {
+  font-family: 'Shizuru', cursive;
+  font-size: 5vh;
+  margin: 1.5vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.home-link {
+  color: #edf6f9;
+  font-size: 1.2vh;
+  font-family: monospace;
 }
