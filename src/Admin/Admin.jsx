@@ -10,17 +10,25 @@ export default function Admin() {
   const [breed, setBreed] = useState('');
   const [bio, setBio] = useState('');
   const [image, setImage] = useState('');
-
+  const [message, setMessage] = useState('');
   const history = useHistory();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const data = await createDog(name, age, breed, bio, image);
-    history.push(`/dogs/${data[0].id}`);
+    try {
+      const data = await createDog(name, age, breed, bio, image);
+      setMessage('Yay! We successfully added your dog. Sending you to the new entry now...');
+      setTimeout(() => {
+        history.push(`/dogs/${data[0].id}`);
+      }, 3000);
+    } catch {
+      setMessage('Oops! We were not able to add your dog.');
+    }
   };
 
   return (
     <div className="Admin">
+      <p className="message">{message}</p>
       <Form
         name={name}
         setName={setName}

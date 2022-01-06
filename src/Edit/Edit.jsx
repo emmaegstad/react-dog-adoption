@@ -10,6 +10,7 @@ export default function Edit() {
   const [breed, setBreed] = useState('');
   const [bio, setBio] = useState('');
   const [image, setImage] = useState('');
+  const [message, setMessage] = useState('');
 
   const history = useHistory();
   const params = useParams();
@@ -27,13 +28,21 @@ export default function Edit() {
   }, [params.id]);
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
-    await updateDog(params.id, name, age, breed, bio, image);
-    history.push(`/dogs/${params.id}`);
+    try {
+      e.preventDefault();
+      await updateDog(params.id, name, age, breed, bio, image);
+      setMessage('Yay! Your dog has been updated. Sending you back to the detail page now.');
+      setTimeout(() => {
+        history.push(`/dogs/${params.id}`);
+      }, 3000);
+    } catch {
+      setMessage('Oops! We were not able to update your dog.');
+    }
   };
 
   return (
     <div className="Edit">
+      <p className="message">{message}</p>
       <Form
         name={name}
         setName={setName}
