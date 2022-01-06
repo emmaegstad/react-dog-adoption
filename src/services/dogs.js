@@ -22,3 +22,8 @@ export async function createDog(name, age, breed, bio, image) {
   const newDog = await client.from('dogs').insert({ name, age, breed, bio, image });
   return checkError(newDog);
 }
+
+export async function deleteDogById(id) {
+  const deletedDog = await client.from('dogs').delete().match({ id });
+  return checkError(deletedDog);
+}

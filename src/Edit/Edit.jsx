@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useHistory } from 'react-router-dom';
 import Form from '../Form/Form';
 import { fetchDogById, updateDog } from '../services/dogs';
 import './Edit.css';
@@ -11,6 +11,7 @@ export default function Edit() {
   const [bio, setBio] = useState('');
   const [image, setImage] = useState('');
 
+  const history = useHistory();
   const params = useParams();
 
   useEffect(() => {
@@ -28,6 +29,7 @@ export default function Edit() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     await updateDog(params.id, name, age, breed, bio, image);
+    history.push(`/dogs/${params.id}`);
   };
 
   return (
