@@ -31,7 +31,7 @@ export default function Edit() {
     try {
       e.preventDefault();
       await updateDog(params.id, name, age, breed, bio, image);
-      setMessage('Yay! Your dog has been updated. Sending you back to the detail page now.');
+      setMessage('Yay! Your dog has been updated. Redirecting to the detail page...');
       setTimeout(() => {
         history.push(`/dogs/${params.id}`);
       }, 3000);

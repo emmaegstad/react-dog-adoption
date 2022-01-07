@@ -17,7 +17,7 @@ export default function Admin() {
     e.preventDefault();
     try {
       const data = await createDog(name, age, breed, bio, image);
-      setMessage('Yay! We successfully added your dog. Sending you to the new entry now...');
+      setMessage('Yay! We successfully added your dog. Redirecting to the new entry...');
       setTimeout(() => {
         history.push(`/dogs/${data[0].id}`);
       }, 3000);

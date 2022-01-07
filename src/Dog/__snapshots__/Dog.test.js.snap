@@ -10,29 +10,31 @@ Object {
       >
         <h2
           class="detail-title"
-        >
-          Althea
-        </h2>
+        />
         <p
           class="details"
         >
-          Althea
            is a(n) 
-          1
            year old 
-          German Short-haired Pointer
           .
         </p>
         <img
           alt="dog"
           class="detail-image"
-          src="https://placedog.net/500?id=10"
         />
         <p
           class="detail-bio"
+        />
+        <a
+          href="/dogs/undefined/edit"
         >
-          High energy pooch! Would do well in an active family with another dog to keep her company.
-        </p>
+          Edit
+        </a>
+        <a
+          href="/dogs"
+        >
+          Delete
+        </a>
       </div>
     </div>
   </body>,
@@ -42,29 +44,31 @@ Object {
     >
       <h2
         class="detail-title"
-      >
-        Althea
-      </h2>
+      />
       <p
         class="details"
       >
-        Althea
          is a(n) 
-        1
          year old 
-        German Short-haired Pointer
         .
       </p>
       <img
         alt="dog"
         class="detail-image"
-        src="https://placedog.net/500?id=10"
       />
       <p
         class="detail-bio"
+      />
+      <a
+        href="/dogs/undefined/edit"
       >
-        High energy pooch! Would do well in an active family with another dog to keep her company.
-      </p>
+        Edit
+      </a>
+      <a
+        href="/dogs"
+      >
+        Delete
+      </a>
     </div>
   </div>,
   "debug": [Function],
