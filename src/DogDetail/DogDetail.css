@@ -1,0 +1,32 @@
+.dog-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #006d77;
+  color: aliceblue;
+  font-family: monospace;
+  border-radius: 5px;
+  width: 50vw;
+  padding: 3vh;
+}
+
+.detail-title {
+  font-family: 'Shizuru', cursive;
+  font-size: 3vh;
+  margin: 0;
+}
+
+.details {
+  font-size: 1.5vh;
+}
+
+.detail-image {
+  width: 40vw;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.detail-bio {
+  font-size: 2vh;
+  text-align: center;
+}
